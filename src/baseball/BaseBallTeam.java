@@ -52,8 +52,8 @@ public class BaseBallTeam {
     }
 
     // reportメソッド
-    public void report(String name, int win, int lose, int draw, double rate) {
-        System.out.println(this.name +" の2022年の成績は " + this.win + "勝 " + this.lose + "敗 " + this.draw + "分、勝率は " + rate + "です。");
+    public void report(String name, int win, int lose, int draw) {
+        System.out.println(name +" の2022年の成績は " + win + "勝 " + lose + "敗 " + draw + "分、勝率は " +  getRate(win, lose) + "です。");
     }
 
 }
